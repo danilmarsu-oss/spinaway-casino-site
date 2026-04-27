@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="nb-NO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Logg inn på Spinaway Casino og opplev det beste innen nettcasino i Norge. Sikker innlogging, rask tilgang til spill og eksklusive bonuser venter deg på vår offisielle norske side.">
+  <title>Spinaway Casino Login – Logg Inn på Din Konto | Offisiell Side i Norge</title>
+  <link rel="canonical" href="/login/">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon 32x32.png">
+  <style>
+    :root {
+      --bg-main: #111031;
+      --surface: #1b1947;
+      --surface-soft: #201e58;
+      --accent: #61ddcb;
+      --text-main: #f3f5ff;
+      --text-muted: #cfd3eb;
+      --radius: 14px;
+      --container: 1160px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Trebuchet MS", "Gill Sans", sans-serif;
+      background: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.55;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .container {
+      width: min(var(--container), calc(100% - 2rem));
+      margin: 0 auto;
+    }
+
+    .site-header,
+    .site-footer { background: #111031; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .header-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .logo img {
+      width: auto;
+      height: 40px;
+    }
+
+    .main-nav {
+      margin-left: auto;
+      margin-right: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .main-nav a {
+      padding: 0.35rem 0.6rem;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+
+    .main-nav a:hover,
+    .main-nav a:focus-visible {
+      background: rgba(255, 255, 255, 0.12);
+      outline: none;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #61ddcb;
+      border: 0;
+      color: #111031;
+      font-weight: 800;
+      cursor: pointer;
+      border-radius: 999px;
+      padding: 0.55rem 1rem;
+      transition: transform 0.2s, filter 0.2s;
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      transform: translateY(-1px);
+      filter: brightness(1.05);
+      outline: none;
+    }
+
+    .content-section {
+      padding: 2.5rem 0;
+    }
+
+    .section-card {
+      background: linear-gradient(180deg, var(--surface-soft), var(--surface));
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius);
+      padding: 1.2rem;
+    }
+
+    .seo-content {
+      color: var(--text-muted);
+    }
+
+    .seo-content h1,
+    .seo-content h2,
+    .seo-content h3 {
+      color: var(--text-main);
+      margin-top: 1.1rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .seo-content h1 {
+      margin-top: 0;
+      font-size: clamp(1.9rem, 4vw, 2.6rem);
+    }
+
+    .seo-content h2 {
+      font-size: clamp(1.35rem, 3vw, 1.9rem);
+    }
+
+    .seo-content h3 {
+      font-size: 1.15rem;
+    }
+
+    .seo-content p {
+      margin: 0.55rem 0 1rem;
+    }
+
+    .seo-content ul,
+    .seo-content ol {
+      padding-left: 1.2rem;
+      margin: 0.4rem 0 1rem;
+    }
+
+    .seo-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.9rem;
+      overflow: hidden;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(11, 9, 35, 0.45);
+      display: block;
+      overflow-x: auto;
+    }
+
+    .seo-content th,
+    .seo-content td {
+      text-align: left;
+      padding: 0.6rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      white-space: nowrap;
+    }
+
+    .seo-content tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .form-panel {
+      margin: 1.2rem 0 1.4rem;
+      padding: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      background: rgba(11, 9, 35, 0.38);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.8rem;
+    }
+
+    .form-field {
+      display: grid;
+      gap: 0.35rem;
+    }
+
+    .form-field.full {
+      grid-column: 1 / -1;
+    }
+
+    .form-field label {
+      color: var(--text-main);
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .form-field input {
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 10px;
+      padding: 0.7rem 0.8rem;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-main);
+      font: inherit;
+    }
+
+    .form-field input::placeholder {
+      color: rgba(207, 211, 235, 0.95);
+    }
+
+    .form-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0.8rem;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+
+    .form-meta a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .form-actions {
+      margin-top: 0.9rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.7rem;
+    }
+
+    .form-note {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+
+    .page-updated {
+      text-align: center;
+      color: var(--text-muted);
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+    }
+
+    .footer-main {
+      padding: 2rem 0 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .trust-row,
+    .policy-row,
+    .social-row,
+    .providers-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.85rem;
+      margin-bottom: 1rem;
+    }
+
+    .trust-link,
+    .provider-logo {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 10px;
+      padding: 0.5rem 0.8rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .trust-link img,
+    .provider-logo img {
+      height: 34px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .policy-row a,
+    .social-row a {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      text-transform: lowercase;
+    }
+
+    .policy-row a:hover,
+    .policy-row a:focus-visible,
+    .social-row a:hover,
+    .social-row a:focus-visible {
+      color: var(--accent);
+      outline: none;
+    }
+
+    .copyright {
+      margin: 0;
+      text-align: center;
+      color: #d7dbf5;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        min-height: 54px;
+        padding: 0.25rem 0;
+        gap: 0.5rem;
+      }
+
+      .logo img { height: 24px; }
+      .main-nav { display: none; }
+
+      .btn {
+        padding: 0.35rem 0.65rem;
+        font-size: 0.78rem;
+      }
+
+      .content-section { padding: 2rem 0; }
+
+      .trust-link img,
+      .provider-logo img {
+        height: 28px;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../" aria-label="Spinaway Casino hjem">
+        <img src="../spinaway images/spinaway logo.webp" alt="Spinaway Casino logo">
+      </a>
+
+      <nav class="main-nav" aria-label="Hovedmeny">
+        <a href="../bonus/">Bonus</a>
+      </nav>
+
+      <div class="header-actions" aria-label="Brukerhandlinger">
+        <a class="btn" href="../login/">Logg inn</a>
+        <a class="btn" href="/go/">Registrer deg</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="content-section">
+      <div class="container section-card seo-content">
+
+<h1>Logg Inn på Spinaway Casino – Din Offisielle Innloggingsside i Norge</h1>
+
+<p>Velkommen til den offisielle innloggingssiden for Spinaway Casino i Norge. Her kan du enkelt og trygt logge inn på din konto og få tilgang til hundrevis av spennende casinospill, eksklusive kampanjer og mye mer. Vi er stolte av å tilby norske spillere en førsteklasses spillopplevelse med rask og sikker tilgang til alle våre tjenester.</p>
+
+<section class="form-panel" aria-label="Innloggingsskjema">
+  <h2>Logg inn på kontoen din</h2>
+  <form action="" method="post">
+    <div class="form-grid">
+      <div class="form-field full">
+        <label for="login-email">E-postadresse</label>
+        <input id="login-email" name="email" type="email" autocomplete="email" placeholder="navn@epost.no" required>
+      </div>
+      <div class="form-field full">
+        <label for="login-password">Passord</label>
+        <input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Skriv inn passord" required>
+      </div>
+    </div>
+    <div class="form-meta">
+      <label><input type="checkbox" name="remember"> Husk meg</label>
+      <a href="../contact-us/">Glemt passord?</a>
+    </div>
+    <div class="form-actions">
+      <button class="btn" type="submit">Logg inn</button>
+      <p class="form-note">Ny hos oss? <a href="/go/">Registrer deg her</a>.</p>
+    </div>
+  </form>
+</section>
+
+<h2>Slik Logger Du Inn på Spinaway Casino</h2>
+
+<p>Å logge inn på Spinaway Casino er enkelt og tar bare noen få sekunder. Vi har designet innloggingsprosessen slik at den er så smidig og brukervennlig som mulig for alle våre norske spillere. Følg disse enkle trinnene for å komme i gang:</p>
+
+<ul>
+  <li>Klikk på «Logg inn»-knappen øverst på siden.</li>
+  <li>Skriv inn din registrerte e-postadresse i det angitte feltet.</li>
+  <li>Tast inn ditt passord i passordfeltet.</li>
+  <li>Klikk på «Bekreft» eller «Logg inn» for å få tilgang til kontoen din.</li>
+</ul>
+
+<p>Dersom du har glemt passordet ditt, trenger du ikke å bekymre deg. Vi tilbyr en enkel tilbakestillingsfunksjon der du bare trenger å klikke på «Glemt passord?»-lenken og følge instruksjonene som sendes til din registrerte e-postadresse. Vi sørger alltid for at du raskt kan gjenopprette tilgangen til kontoen din.</p>
+
+<h2>Trygg og Sikker Innlogging</h2>
+
+<p>Hos Spinaway Casino tar vi sikkerheten til våre spillere på alvor. Vår offisielle norske nettside benytter den nyeste SSL-krypteringsteknologien for å beskytte all informasjon som overføres mellom deg og oss. Dette betyr at dine personlige opplysninger og finansielle data alltid er trygge når du logger inn på vår plattform.</p>
+
+<p>Vi anbefaler alltid våre spillere å bruke et sterkt og unikt passord for sin Spinaway-konto. Et godt passord bør inneholde en kombinasjon av store og små bokstaver, tall og spesialtegn. Vi oppfordrer deg også til å aktivere tofaktorautentisering dersom dette er tilgjengelig, for et ekstra lag med sikkerhet.</p>
+
+<p>Vår plattform overvåkes kontinuerlig for å sikre at alle transaksjoner og innloggingsforsøk er legitime. Dersom vi oppdager mistenkelig aktivitet på kontoen din, vil vi umiddelbart varsle deg og iverksette nødvendige tiltak for å beskytte deg og dine midler.</p>
+
+<h2>Hva Venter Deg Etter Innlogging?</h2>
+
+<p>Når du har logget inn på din Spinaway Casino-konto, åpner det seg en verden av underholdning og muligheter. Vi tilbyr et bredt utvalg av spill fra de beste spillutviklerne i bransjen, inkludert populære spilleautomater, bordspill, live casino og mye mer.</p>
+
+<p>Blant det du kan forvente etter innlogging, finner du:</p>
+
+<ul>
+  <li><strong>Spilleautomater:</strong> Vi tilbyr hundrevis av spilleautomater med ulike temaer, funksjoner og jackpotter. Fra klassiske fruktkurvspill til moderne videoslots med avanserte bonusfunksjoner – det er noe for enhver smak.</li>
+  <li><strong>Live Casino:</strong> Opplev spenningen av et ekte kasino hjemmefra med våre live casino-spill. Spill mot ekte dealere i sanntid og nyt en autentisk kasinoatmosfære.</li>
+  <li><strong>Bordspill:</strong> Vi tilbyr et stort utvalg av klassiske bordspill som blackjack, rulett, baccarat og poker i ulike varianter.</li>
+  <li><strong>Eksklusive Bonuser og Kampanjer:</strong> Som innlogget spiller hos oss får du tilgang til våre nyeste kampanjer, gratisspinn, cashback-tilbud og mye mer.</li>
+  <li><strong>Lojalitetsprogram:</strong> Jo mer du spiller, desto mer belønner vi deg. Vårt lojalitetsprogram er designet for å gi deg maksimalt utbytte av din tid hos Spinaway Casino.</li>
+</ul>
+
+<h2>Problemer med Innlogging? Vi Hjelper Deg!</h2>
+
+<p>Opplever du problemer med å logge inn på din konto? Ikke bekymre deg – vi er alltid her for å hjelpe deg. Vårt dedikerte kundeserviceteam er tilgjengelig døgnet rundt, alle dager i uken, for å bistå deg med eventuelle spørsmål eller problemer du måtte ha.</p>
+
+<p>De vanligste innloggingsproblemene inkluderer glemt passord, blokkert konto eller feil e-postadresse. Her er noen raske løsninger:</p>
+
+<ul>
+  <li><strong>Glemt passord:</strong> Bruk «Glemt passord?»-funksjonen på innloggingssiden for å tilbakestille passordet ditt via e-post.</li>
+  <li><strong>Blokkert konto:</strong> Kontakt vår kundeservice direkte via live chat eller e-post for å få hjelp til å gjenåpne kontoen din.</li>
+  <li><strong>Feil e-postadresse:</strong> Dersom du er usikker på hvilken e-postadresse du registrerte deg med, kan vår kundeservice hjelpe deg med å finne kontoen din.</li>
+</ul>
+
+<p>Vi setter alltid spillernes opplevelse i sentrum, og vi gjør alt vi kan for å sikre at innloggingsprosessen er så enkel og problemfri som mulig for alle våre norske brukere.</p>
+
+<h2>Ny Spiller? Registrer Deg i Dag!</h2>
+
+<p>Har du ennå ikke en konto hos Spinaway Casino? Det er enkelt å komme i gang! Registreringsprosessen tar bare noen minutter, og du vil raskt kunne nyte alt vi har å tilby. Klikk på «Registrer deg»-knappen på vår offisielle norske side og følg de enkle instruksjonene for å opprette din konto.</p>
+
+<p>Som ny spiller hos oss kan du se frem til en generøs velkomstbonus som gir deg en flott start på din spillopplevelse. Vi ønsker alle nye norske spillere hjertelig velkommen til Spinaway Casino-familien.</p>
+
+<h2>Ansvarlig Spilling hos Spinaway Casino</h2>
+
+<p>Vi hos Spinaway Casino er opptatt av at spilling skal være en morsom og trygg aktivitet for alle våre spillere. Vi tilbyr en rekke verktøy for ansvarlig spilling, inkludert innskuddsgrenser, tapgrenser, øktgrenser og muligheten til å ta pauser fra spilling. Vi oppfordrer alle våre norske spillere til å spille ansvarlig og innenfor sine egne grenser.</p>
+
+<p>Dersom du føler at spillingen din har blitt et problem, er vi her for å hjelpe. Kontakt vår kundeservice for å lære mer om våre selveksklusjonsalternativer og andre støttetiltak vi tilbyr.</p>
+
+<p>Logg inn på Spinaway Casino i dag og opplev det beste innen nettcasino på vår offisielle norske plattform. Vi gleder oss til å se deg!</p>      </div>
+    </section>
+
+    <section class="page-updated" aria-label="Siden oppdatert">
+      <div class="container">
+        <strong>Siden oppdatert:</strong>
+        <time id="updatedDate" datetime="2026-04-27">27. april 2026</time>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="trust-row" aria-label="Trust badges">
+        <a class="trust-link" href="https://www.gamstop.co.uk/" target="_blank" rel="noopener noreferrer">
+          <img src="../trust badges/gamstop.png" alt="Gamstop">
+        </a>
+        <a class="trust-link" href="https://www.gamcare.org.uk/" target="_blank" rel="noopener noreferrer">
+          <img src="../trust badges/GamCare.png" alt="GamCare">
+        </a>
+        <a class="trust-link" href="https://www.begambleaware.org/" target="_blank" rel="noopener noreferrer">
+          <img src="../trust badges/gambleaware.png" alt="BeGambleAware">
+        </a>
+      </div>
+
+      <nav class="policy-row" aria-label="Policy lenker">
+        <a href="../about-us/">om oss</a>
+        <a href="../contact-us/">kontakt oss</a>
+        <a href="../bonus-policy/">bonuspolicy</a>
+        <a href="../privacy-policy/">personvernpolicy</a>
+        <a href="../responsible-gambling/">ansvarlig spilling</a>
+        <a href="../terms-and-conditions/">vilkår og betingelser</a>
+      </nav>
+
+      <div class="social-row" aria-label="Sosiale medier">
+        <a href="." target="_blank" rel="noopener noreferrer">offisiell sosial kanal</a>
+      </div>
+
+      <div class="providers-row" aria-label="Spilleleverandører">
+        <span class="provider-logo"><img src="../providers/evolution.png" alt="Evolution"></span>
+        <span class="provider-logo"><img src="../providers/microgaming-logo.png" alt="Microgaming"></span>
+        <span class="provider-logo"><img src="../providers/netentlogo.png" alt="NetEnt"></span>
+        <span class="provider-logo"><img src="../providers/nolimit city.png" alt="Nolimit City"></span>
+        <span class="provider-logo"><img src="../providers/playngo.webp" alt="Playngo"></span>
+        <span class="provider-logo"><img src="../providers/playn-go-logo.png" alt="Play'n GO"></span>
+        <span class="provider-logo"><img src="../providers/pragmatic-play-logo-png.png" alt="Pragmatic Play"></span>
+        <span class="provider-logo"><img src="../providers/pragmatic-play.png" alt="Pragmatic Play Full"></span>
+        <span class="provider-logo"><img src="../providers/quickspin.png" alt="Quickspin"></span>
+        <span class="provider-logo"><img src="../providers/Games-Global.svg" alt="Games Global"></span>
+        <span class="provider-logo"><img src="../providers/Yggdrasil Gaming_Logo_1.png" alt="Yggdrasil"></span>
+      </div>
+
+      <p class="copyright">&copy; 2026 Spinaway Casino. Alle rettigheter forbeholdt.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var dateNode = document.getElementById('updatedDate');
+      if (dateNode) {
+        var now = new Date();
+        dateNode.textContent = now.toLocaleDateString('nb-NO', {
+          day: 'numeric',
+          month: 'long',
+          year: 'numeric'
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

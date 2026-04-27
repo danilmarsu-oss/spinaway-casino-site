@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="nb-NO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Les mer om Spinaway Casino – din offisielle norske casino-destinasjon. Vi tilbyr et trygt, morsomt og spennende spillmiljø med hundrevis av spill, gode bonuser og førsteklasses kundeservice.">
+  <title>Om Oss – Spinaway Casino Norge | Offisiell Nettside</title>
+  <link rel="canonical" href="/about-us/">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon 32x32.png">
+  <style>
+    :root {
+      --bg-main: #111031;
+      --surface: #1b1947;
+      --surface-soft: #201e58;
+      --accent: #61ddcb;
+      --text-main: #f3f5ff;
+      --text-muted: #cfd3eb;
+      --radius: 14px;
+      --container: 1160px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Trebuchet MS", "Gill Sans", sans-serif;
+      background: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.55;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .container {
+      width: min(var(--container), calc(100% - 2rem));
+      margin: 0 auto;
+    }
+
+    .site-header,
+    .site-footer { background: #111031; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .header-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .logo img {
+      width: auto;
+      height: 40px;
+    }
+
+    .main-nav {
+      margin-left: auto;
+      margin-right: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .main-nav a {
+      padding: 0.35rem 0.6rem;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+
+    .main-nav a:hover,
+    .main-nav a:focus-visible {
+      background: rgba(255, 255, 255, 0.12);
+      outline: none;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #61ddcb;
+      border: 0;
+      color: #111031;
+      font-weight: 800;
+      cursor: pointer;
+      border-radius: 999px;
+      padding: 0.55rem 1rem;
+      transition: transform 0.2s, filter 0.2s;
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      transform: translateY(-1px);
+      filter: brightness(1.05);
+      outline: none;
+    }
+
+    .content-section {
+      padding: 2.5rem 0;
+    }
+
+    .section-card {
+      background: linear-gradient(180deg, var(--surface-soft), var(--surface));
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius);
+      padding: 1.2rem;
+    }
+
+    .seo-content {
+      color: var(--text-muted);
+    }
+
+    .seo-content h1,
+    .seo-content h2,
+    .seo-content h3 {
+      color: var(--text-main);
+      margin-top: 1.1rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .seo-content h1 {
+      margin-top: 0;
+      font-size: clamp(1.9rem, 4vw, 2.6rem);
+    }
+
+    .seo-content h2 {
+      font-size: clamp(1.35rem, 3vw, 1.9rem);
+    }
+
+    .seo-content h3 {
+      font-size: 1.15rem;
+    }
+
+    .seo-content p {
+      margin: 0.55rem 0 1rem;
+    }
+
+    .seo-content ul,
+    .seo-content ol {
+      padding-left: 1.2rem;
+      margin: 0.4rem 0 1rem;
+    }
+
+    .seo-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.9rem;
+      overflow: hidden;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(11, 9, 35, 0.45);
+      display: block;
+      overflow-x: auto;
+    }
+
+    .seo-content th,
+    .seo-content td {
+      text-align: left;
+      padding: 0.6rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      white-space: nowrap;
+    }
+
+    .seo-content tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .page-updated {
+      text-align: center;
+      color: var(--text-muted);
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+    }
+
+    .footer-main {
+      padding: 2rem 0 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .trust-row,
+    .policy-row,
+    .social-row,
+    .providers-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.85rem;
+      margin-bottom: 1rem;
+    }
+
+    .trust-link,
+    .provider-logo {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 10px;
+      padding: 0.5rem 0.8rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .trust-link img,
+    .provider-logo img {
+      height: 34px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .policy-row a,
+    .social-row a {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      text-transform: lowercase;
+    }
+
+    .policy-row a:hover,
+    .policy-row a:focus-visible,
+    .social-row a:hover,
+    .social-row a:focus-visible {
+      color: var(--accent);
+      outline: none;
+    }
+
+    .copyright {
+      margin: 0;
+      text-align: center;
+      color: #d7dbf5;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        min-height: 54px;
+        padding: 0.25rem 0;
+        gap: 0.5rem;
+      }
+
+      .logo img { height: 24px; }
+      .main-nav { display: none; }
+
+      .btn {
+        padding: 0.35rem 0.65rem;
+        font-size: 0.78rem;
+      }
+
+      .content-section { padding: 2rem 0; }
+
+      .trust-link img,
+      .provider-logo img {
+        height: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../" aria-label="Spinaway Casino hjem">
+        <img src="../spinaway images/spinaway logo.webp" alt="Spinaway Casino logo">
+      </a>
+
+      <nav class="main-nav" aria-label="Hovedmeny">
+        <a href="../bonus/">Bonus</a>
+      </nav>
+
+      <div class="header-actions" aria-label="Brukerhandlinger">
+        <a class="btn" href="../login/">Logg inn</a>
+        <a class="btn" href="/go/">Registrer deg</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="content-section">
+      <div class="container section-card seo-content">
+
+<h1>Om Oss – Spinaway Casino</h1>
+
+<p>Velkommen til den offisielle nettsiden til Spinaway Casino i Norge. Vi er stolte av å tilby norske spillere en trygg, underholdende og spennende spillopplevelse som er skreddersydd for deg. Hos oss finner du alt du trenger for en komplett casinoopplevelse – fra et bredt utvalg av spill til generøse bonuser og en kundeservice som alltid er klar til å hjelpe deg.</p>
+
+<h2>Hvem er vi?</h2>
+
+<p>Spinaway Casino er et moderne og innovativt nettcasino som ble grunnlagt med én klar visjon: å skape den beste mulige spillopplevelsen for våre spillere. Vi forstår at norske spillere har høye forventninger, og det er nettopp derfor vi jobber hardt hver eneste dag for å overgå disse forventningene. Vår plattform er bygget på et solid fundament av tillit, sikkerhet og ansvarlig spilling, og vi er dedikert til å opprettholde disse verdiene i alt vi gjør.</p>
+
+<p>Vi er lisensiert og regulert av anerkjente spillmyndigheter, noe som betyr at du som spiller alltid kan stole på at spillet foregår på en rettferdig og transparent måte. Vår lisensiering sikrer at alle våre spill er testet og sertifisert av uavhengige tredjeparter, slik at du kan spille med full trygghet og ro i sinnet.</p>
+
+<h2>Vårt spillutvalg</h2>
+
+<p>Hos Spinaway Casino tilbyr vi et imponerende utvalg av casinospill som passer for alle typer spillere – enten du er nybegynner eller erfaren. Vårt bibliotek inneholder hundrevis av spill fra verdens ledende spillutviklere, inkludert populære navn som NetEnt, Microgaming, Play'n GO, Evolution Gaming og mange flere.</p>
+
+<p>Vi er spesielt stolte av vår samling av spilleautomater, som inkluderer alt fra klassiske tre-hjuls maskiner til moderne videoslots med avanserte funksjoner, bonusrunder og progressive jackpoter. Hvis du er en fan av bordspill, tilbyr vi også et bredt utvalg av blackjack, rulett, baccarat og poker i ulike varianter.</p>
+
+<p>For de som ønsker en mer autentisk casinoopplevelse, har vi et dedikert live casino-seksjon der du kan spille mot ekte dealere i sanntid. Vår live casino-plattform er drevet av de beste leverandørene i bransjen, og vi sørger for at du alltid har tilgang til et bredt utvalg av live-spill med høy videokvalitet og profesjonelle dealere.</p>
+
+<h2>Bonuser og kampanjer</h2>
+
+<p>Vi tror på å belønne våre spillere, og det er derfor vi tilbyr en rekke attraktive bonuser og kampanjer. Nye spillere hos oss ønskes velkommen med en generøs velkomstbonus som gir deg en flott start på din spillreise. I tillegg til velkomstbonusen har vi et løpende kampanjeprogram som sikrer at både nye og eksisterende spillere alltid har noe å se frem til.</p>
+
+<p>Våre kampanjer inkluderer blant annet gratisspinn, reload-bonuser, cashback-tilbud og eksklusive turneringer der du kan konkurrere mot andre spillere om flotte premier. Vi oppdaterer jevnlig våre kampanjetilbud for å sikre at du alltid har tilgang til de beste mulighetene for å maksimere din spillopplevelse.</p>
+
+<p>Vi oppfordrer alle våre spillere til å lese bonusvilkårene nøye før de aktiverer en bonus. Vi er opptatt av full åpenhet, og alle våre bonusvilkår er tydelig beskrevet på nettstedet slik at du alltid vet nøyaktig hva du takker ja til.</p>
+
+<h2>Sikkerhet og ansvarlig spilling</h2>
+
+<p>Sikkerheten til våre spillere er vår høyeste prioritet. Vi benytter den nyeste SSL-krypteringsteknologien for å sikre at all din personlige informasjon og alle finansielle transaksjoner er fullstendig beskyttet. Du kan alltid stole på at dine data er trygge hos oss.</p>
+
+<p>Vi er også sterkt forpliktet til ansvarlig spilling. Vi forstår at gambling kan være en morsom og underholdende aktivitet, men vi erkjenner også at det for noen kan bli et problem. Derfor tilbyr vi en rekke verktøy og ressurser som hjelper deg med å holde spillingen under kontroll. Du kan sette innskuddsgrenser, tapegrenser, spillegrenser og til og med ta en pause fra spilling dersom du føler behov for det.</p>
+
+<p>Dersom du eller noen du kjenner har problemer med gambling, oppfordrer vi deg til å ta kontakt med hjelpeorganisasjoner som Hjelpelinjen for spilleavhengighet. Vi samarbeider aktivt med organisasjoner som fremmer ansvarlig spilling, og vi er alltid klare til å hjelpe spillere som trenger støtte.</p>
+
+<h2>Innskudd og uttak</h2>
+
+<p>Hos Spinaway Casino tilbyr vi et bredt utvalg av trygge og enkle betalingsmetoder som er tilpasset norske spillere. Du kan gjøre innskudd og uttak via populære metoder som bankkort, e-lommebøker og andre lokalt foretrukne betalingsløsninger. Vi behandler alle transaksjoner raskt og effektivt, slik at du alltid har tilgang til midlene dine når du trenger dem.</p>
+
+<p>Vi har ingen skjulte gebyrer på innskudd eller uttak, og vi er opptatt av at prosessen skal være så enkel og smidig som mulig. Vår finansielle plattform er sikret med den nyeste teknologien, og du kan alltid stole på at dine transaksjoner behandles på en trygg og pålitelig måte.</p>
+
+<h2>Kundeservice</h2>
+
+<p>Vi er stolte av å tilby en førsteklasses kundeservice til alle våre spillere. Vårt dedikerte supportteam er tilgjengelig døgnet rundt, alle dager i uken, og er klare til å hjelpe deg med eventuelle spørsmål eller problemer du måtte ha. Du kan nå oss via live chat, e-post eller telefon, og vi garanterer rask og profesjonell respons uansett hvilken kanal du velger.</p>
+
+<p>Vårt kundeserviceteam er opplært til å håndtere alle typer henvendelser, fra tekniske spørsmål til spørsmål om bonuser og kontobehandling. Vi er her for deg, og vi jobber alltid for å sikre at din opplevelse hos oss er så positiv som mulig.</p>
+
+<h2>Vår forpliktelse til deg</h2>
+
+<p>Som den offisielle nettsiden til Spinaway Casino i Norge er vi forpliktet til å gi deg den beste mulige casinoopplevelsen. Vi jobber kontinuerlig med å forbedre vår plattform, utvide vårt spillutvalg og tilby enda bedre bonuser og kampanjer. Din tilfredshet er vår motivasjon, og vi setter pris på all tilbakemelding vi mottar fra våre spillere.</p>
+
+<p>Vi inviterer deg til å bli en del av Spinaway Casino-familien og oppleve alt vi har å tilby. Registrer deg i dag og ta det første steget mot en uforglemmelig spillopplevelse. Vi ser frem til å ønske deg velkommen!</p>      </div>
+    </section>
+
+    <section class="page-updated" aria-label="Siden oppdatert">
+      <div class="container">
+        <strong>Siden oppdatert:</strong>
+        <time id="updatedDate" datetime="2026-04-27">27. april 2026</time>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="trust-row" aria-label="Trust badges">
+        <a class="trust-link" href="https://www.gamstop.co.uk/" target="_blank" rel="noopener noreferrer">
+          <img src="../trust badges/gamstop.png" alt="Gamstop">
+        </a>
+        <a class="trust-link" href="https://www.gamcare.org.uk/" target="_blank" rel="noopener noreferrer">
+          <img src="../trust badges/GamCare.png" alt="GamCare">
+        </a>
+        <a class="trust-link" href="https://www.begambleaware.org/" target="_blank" rel="noopener noreferrer">
+          <img src="../trust badges/gambleaware.png" alt="BeGambleAware">
+        </a>
+      </div>
+
+      <nav class="policy-row" aria-label="Policy lenker">
+        <a href="../about-us/">om oss</a>
+        <a href="../contact-us/">kontakt oss</a>
+        <a href="../bonus-policy/">bonuspolicy</a>
+        <a href="../privacy-policy/">personvernpolicy</a>
+        <a href="../responsible-gambling/">ansvarlig spilling</a>
+        <a href="../terms-and-conditions/">vilkår og betingelser</a>
+      </nav>
+
+      <div class="social-row" aria-label="Sosiale medier">
+        <a href="." target="_blank" rel="noopener noreferrer">offisiell sosial kanal</a>
+      </div>
+
+      <div class="providers-row" aria-label="Spilleleverandører">
+        <span class="provider-logo"><img src="../providers/evolution.png" alt="Evolution"></span>
+        <span class="provider-logo"><img src="../providers/microgaming-logo.png" alt="Microgaming"></span>
+        <span class="provider-logo"><img src="../providers/netentlogo.png" alt="NetEnt"></span>
+        <span class="provider-logo"><img src="../providers/nolimit city.png" alt="Nolimit City"></span>
+        <span class="provider-logo"><img src="../providers/playngo.webp" alt="Playngo"></span>
+        <span class="provider-logo"><img src="../providers/playn-go-logo.png" alt="Play'n GO"></span>
+        <span class="provider-logo"><img src="../providers/pragmatic-play-logo-png.png" alt="Pragmatic Play"></span>
+        <span class="provider-logo"><img src="../providers/pragmatic-play.png" alt="Pragmatic Play Full"></span>
+        <span class="provider-logo"><img src="../providers/quickspin.png" alt="Quickspin"></span>
+        <span class="provider-logo"><img src="../providers/Games-Global.svg" alt="Games Global"></span>
+        <span class="provider-logo"><img src="../providers/Yggdrasil Gaming_Logo_1.png" alt="Yggdrasil"></span>
+      </div>
+
+      <p class="copyright">&copy; 2026 Spinaway Casino. Alle rettigheter forbeholdt.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var dateNode = document.getElementById('updatedDate');
+      if (dateNode) {
+        var now = new Date();
+        dateNode.textContent = now.toLocaleDateString('nb-NO', {
+          day: 'numeric',
+          month: 'long',
+          year: 'numeric'
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
